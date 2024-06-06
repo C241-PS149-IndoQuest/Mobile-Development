@@ -1,0 +1,8 @@
+<!-- res/drawable/square_fab.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    >
+    <solid android:color="#FFFFFF"/> <!-- White background color -->
+    <corners android:radius="10dp"/> <!-- Optional: Adjust the corner radius as needed -->
+</shape>
+

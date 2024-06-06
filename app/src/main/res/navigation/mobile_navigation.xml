@@ -15,7 +15,7 @@
         android:id="@+id/navigation_explore"
         android:name="com.example.indoquest.ui.explore.ExploreFragment"
         android:label="@string/title_explore"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_explore" />
 
     <fragment
         android:id="@+id/navigation_hidden_gem"

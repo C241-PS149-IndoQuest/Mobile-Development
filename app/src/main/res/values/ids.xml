@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="card_view" type="id" />
+    <item name="card_view_img" type="id" />
+    <item name="img_item_photo" type="id" />
+    <item name="tv_item_name" type="id" />
+    <item name="tv_item_rating" type="id" />
+    <item name="tv_item_desc" type="id" />
+    <item name="tv_item_location" type="id" />
+</resources>
