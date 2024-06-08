@@ -4,15 +4,23 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
+import androidx.viewpager2.widget.ViewPager2
 import com.example.indoquest.R
-import com.example.indoquest.databinding.FragmentHomeBinding
 import com.example.indoquest.databinding.FragmentProfileBinding
-import com.example.indoquest.ui.home.HomeViewModel
+import com.example.indoquest.ui.profile.adapter.DetailProfileAdapter
+import com.google.android.material.tabs.TabLayout
+import com.google.android.material.tabs.TabLayoutMediator
 
 class ProfileFragment : Fragment() {
+
+    companion object {
+        private val TAB_TITLES = intArrayOf(
+            R.string.user_tab_title_1,
+            R.string.user_tab_title_2,
+            R.string.user_tab_title_3
+        )
+    }
 
     private var _binding: FragmentProfileBinding? = null
 
@@ -25,17 +33,22 @@ class ProfileFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val profileViewModel =
-            ViewModelProvider(this)[ProfileViewModel::class.java]
-
         _binding = FragmentProfileBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
-        val textView: TextView = binding.textProfile
-        profileViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
         return root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val sectionsPagerAdapter = DetailProfileAdapter(this)
+        val viewPager: ViewPager2 = binding.viewPager
+        viewPager.adapter = sectionsPagerAdapter
+
+        val tabs: TabLayout = binding.tabLayout
+        TabLayoutMediator(tabs, viewPager) { tab, position ->
+            tab.text = resources.getString(TAB_TITLES[position])
+        }.attach()
     }
 
     override fun onDestroyView() {

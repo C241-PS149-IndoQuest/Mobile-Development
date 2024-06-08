@@ -15,7 +15,18 @@
 
         <!--Splash Screen section-->
         <item name="android:windowIsTranslucent">true</item>
+
+        <!--Floating Action Button Style-->
+        <item name="floatingActionButtonStyle">@style/FloatingActionButtonSytle</item>
     </style>
 
     <style name="Theme.IndoQuest" parent="Base.Theme.IndoQuest" />
+
+    <style name="FloatingActionButtonSytle" parent="Widget.Design.FloatingActionButton">
+        <item name="shapeAppearanceOverlay">@style/FabShapeStyle1</item>
+    </style>
+
+    <style name="FabShapeStyle1" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">20%</item>
+    </style>
 </resources>

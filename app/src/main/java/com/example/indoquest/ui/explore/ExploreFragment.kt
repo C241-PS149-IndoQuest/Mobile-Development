@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.indoquest.R
@@ -81,7 +82,7 @@ class ExploreFragment : Fragment() {
     }
 
     private fun showRecyclerList() {
-        rvDestination.layoutManager = LinearLayoutManager(context)
+        rvDestination.layoutManager = GridLayoutManager(context, 2)
         val listDestinationAdapter = ListExploreAdapter(list)
         rvDestination.adapter = listDestinationAdapter
     }

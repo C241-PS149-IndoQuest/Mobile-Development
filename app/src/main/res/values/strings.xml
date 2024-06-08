@@ -34,12 +34,16 @@
     <string name="sign_up">Sign Up</string>
     <string name="indoquest_logo">indoquest logo</string>
 
-    <!--TAB TITLES-->
-    <string name="tab_title_1">Detail</string>
-    <string name="tab_title_2">Reviews</string>
+    <!--DESTINATION TAB TITLES-->
+    <string name="des_tab_title_1">Detail</string>
+    <string name="des_tab_title_2">Reviews</string>
     <string name="check_location_now">Check Location now</string>
     <string name="search_your_destination_here">Search your destination here</string>
 
+    <!--USER PROFILE TABL TITLES-->
+    <string name="user_tab_title_1">Post</string>
+    <string name="user_tab_title_2">Destination</string>
+    <string name="user_tab_title_3">HiddenGem</string>
 
     <!--    Dummy Data-->
     <!--    Dummy Data-->
@@ -47,6 +51,12 @@
     <string name="recommend_for_you">Recommend For You</string>
     <string name="view_detail">view detail</string>
     <string name="button">Button</string>
+    <string name="detail_destination_fragment">Detail Destination Fragment</string>
+    <string name="destination_image">Destination_image</string>
+    <string name="back_to_home">back to home</string>
+    <string name="add_comment_button">add comment button</string>
+    <string name="hidden_gem">Hidden Gem</string>
+    <string name="edit_profile">Edit profile</string>
 
     <!--    Destination name-->
     <string-array name="data_name">

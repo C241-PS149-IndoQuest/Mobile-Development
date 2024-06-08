@@ -5,24 +5,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.explore.ExploreFragment"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    >
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="332dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/outlined_text_input_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/search_your_destination_here"
+        android:layout_marginTop="40dp"
         >
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:maxLines="1"
-            android:hint="@string/search_your_destination_here" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/outlined_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        />
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_category_btn"
-        android:layout_margin="16dp"
+        android:layout_marginVertical="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -30,6 +42,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_explore_destination"
+        android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 </LinearLayout>

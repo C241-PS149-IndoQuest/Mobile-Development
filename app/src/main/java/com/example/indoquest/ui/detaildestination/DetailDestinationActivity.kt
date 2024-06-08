@@ -15,6 +15,7 @@ import com.example.indoquest.R
 import com.example.indoquest.ui.detaildestination.adapter.DetailDestinationAdapter
 import com.example.indoquest.databinding.ActivityDetailDestinationBinding
 import com.example.indoquest.model.Destination
+import com.example.indoquest.ui.detaildestination.fragment.DetailFragment
 import com.example.indoquest.ui.home.HomeFragment
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
@@ -25,13 +26,13 @@ class DetailDestinationActivity : AppCompatActivity() {
 
     companion object {
         private val TAB_TITLES = intArrayOf(
-            R.string.tab_title_1,
-            R.string.tab_title_2
+            R.string.des_tab_title_1,
+            R.string.des_tab_title_2
         )
         val EXTRA_DESTINATION = "Destination"
     }
 
-    @SuppressLint("MissingInflatedId")
+    @SuppressLint("MissingInflatedId", "CommitTransaction")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -45,11 +46,6 @@ class DetailDestinationActivity : AppCompatActivity() {
         // Retrieve the Parcelable object from the Intent
         val destination = intent.getParcelableExtra<Destination>(EXTRA_DESTINATION) as Destination
         setupData(destination)
-
-        // Now, pass this data to the fragment
-//        if (destination != null) {
-//
-//        }
 
         val backBtn = binding.btnBack
         backBtn.setOnClickListener {

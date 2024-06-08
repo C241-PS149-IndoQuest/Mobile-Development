@@ -55,4 +55,7 @@ dependencies {
 
     //    Splash screen dependencies
     implementation(libs.androidx.core.splashscreen)
+
+    //    Circle Image View
+    implementation(libs.circleimageview)
 }
