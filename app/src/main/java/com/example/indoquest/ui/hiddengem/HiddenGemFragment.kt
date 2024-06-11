@@ -1,6 +1,7 @@
 package com.example.indoquest.ui.hiddengem
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -13,18 +14,18 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.indoquest.R
 import com.example.indoquest.databinding.FragmentHiddenGemBinding
 import com.example.indoquest.model.Destination
+import com.example.indoquest.ui.addhiddengem.AddHiddenGemActivity
 import com.example.indoquest.ui.hiddengem.adapter.ListHiddenGemAdapter
-import com.example.indoquest.ui.home.adapter.ListDestinationAdapter
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class HiddenGemFragment : Fragment() {
     private var _binding: FragmentHiddenGemBinding? = null
     private lateinit var rvHiddenGem : RecyclerView
+    private lateinit var floatingActionButtonAdd: FloatingActionButton
 
 //    Seharusnya ini diganti sama HiddenGem
     private val list = ArrayList<Destination>()
-
     private val binding get() = _binding!!
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -32,7 +33,6 @@ class HiddenGemFragment : Fragment() {
     ): View {
         _binding = FragmentHiddenGemBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
         return root
     }
 
@@ -44,6 +44,12 @@ class HiddenGemFragment : Fragment() {
 
         list.addAll(getListHiddenGem())
         showRecyclerList()
+
+        floatingActionButtonAdd = binding.fabAddHiddengem
+        floatingActionButtonAdd.setOnClickListener {
+            val intent = Intent(activity, AddHiddenGemActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onDestroyView() {

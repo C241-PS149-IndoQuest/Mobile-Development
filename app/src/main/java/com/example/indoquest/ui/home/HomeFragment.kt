@@ -55,8 +55,8 @@ class HomeFragment : Fragment() {
         val dataLocation = resources.getStringArray(R.array.data_location)
         val listDestination = ArrayList<Destination>()
         for (i in dataName.indices) {
-            val hero = Destination(dataName[i], dataDescription[i], dataPhoto.getResourceId(i, -1), dataRate[i], dataLocation[i])
-            listDestination.add(hero)
+            val destination = Destination(dataName[i], dataDescription[i], dataPhoto.getResourceId(i, -1), dataRate[i], dataLocation[i])
+            listDestination.add(destination)
         }
         return listDestination
     }

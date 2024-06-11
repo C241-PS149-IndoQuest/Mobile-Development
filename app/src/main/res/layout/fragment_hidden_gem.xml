@@ -41,8 +41,7 @@
             android:focusable="true"
             app:backgroundTint="@color/white"
             android:background="@drawable/square_button"
-            android:src="@drawable/baseline_add_24"
-            />
+            android:src="@drawable/baseline_add_24" />
     </FrameLayout>
 
 </LinearLayout>

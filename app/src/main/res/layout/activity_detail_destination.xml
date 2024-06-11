@@ -78,6 +78,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:alpha="1"
+            android:layout_marginBottom="-4dp"
             android:fontFamily="@font/poppins_semibold"
             android:textColor="@color/black"
             android:textSize="20sp"
@@ -135,7 +136,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_item_name"
             tools:text="Pantai Selong Belanak" />
-
     </LinearLayout>
 
     <com.google.android.material.tabs.TabLayout
@@ -154,8 +154,8 @@
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/view_pager"
             android:layout_width="match_parent"
-            android:layout_marginTop="8dp"
             android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             app:layout_constraintVertical_bias="0.0">
@@ -168,6 +168,9 @@
             android:text="@string/check_location_now"
             android:layout_gravity="center|bottom"
             android:layout_marginBottom="16dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="12sp"
+            android:textAllCaps="false"
             app:layout_constraintTop_toBottomOf="@+id/view_pager" />
     </FrameLayout>
 </LinearLayout>

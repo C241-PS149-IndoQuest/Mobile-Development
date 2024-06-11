@@ -19,7 +19,7 @@
 
         <TextView
             android:id="@+id/tv_signup_title"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/title_page"
             android:textSize="30sp"
@@ -116,6 +116,7 @@
             android:fontFamily="@font/poppins_light"
             android:background="@drawable/button_login_signup_rounded"
             android:textStyle="bold"
+            android:textAllCaps="false"
             android:alpha="0"
             tools:alpha="1"
             />

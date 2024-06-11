@@ -57,6 +57,19 @@
     <string name="add_comment_button">add comment button</string>
     <string name="hidden_gem">Hidden Gem</string>
     <string name="edit_profile">Edit profile</string>
+    <string name="user_post_fragment">User Post Fragment</string>
+    <string name="nama_tempat">Nama tempat</string>
+    <string name="lokasi_tempat">Lokasi</string>
+    <string name="kategori">Kategori</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="tips_and_trick">Tips and trick</string>
+    <string name="send">Send</string>
+    <string name="questshare">QuestShare</string>
+    <string name="share_ceritamu_di_questshare">Share ceritamu di questshare!</string>
+    <string name="fauzan_azima">Fauzan Azima</string>
+    <string name="location">Location</string>
+    <string name="judul_kegiatan">Judul Kegiatan</string>
+    <string name="post">Post</string>
 
     <!--    Destination name-->
     <string-array name="data_name">
@@ -123,5 +136,41 @@
         <item>4.4</item>
         <item>4.0</item>
         <item>4.2</item>
+    </string-array>
+
+    <integer-array name="data_profile_qs">
+        <item>@drawable/img_orang1</item>
+        <item>@drawable/img_orang2</item>
+        <item>@drawable/img_orang1</item>
+    </integer-array>
+
+    <integer-array name="data_post_qs">
+        <item>@drawable/img_post1</item>
+        <item>@drawable/img_post2</item>
+        <item>@drawable/img_post1</item>
+    </integer-array>
+
+    <string-array name="data_title_qs">
+        <item>Jalan-jalan ke Bali</item>
+        <item>Liburan dluu</item>
+        <item>Ini gabut doangg</item>
+    </string-array>
+
+    <string-array name="data_username_qs">
+        <item>Fauzan Azima</item>
+        <item>Khairunnisa Fitriani</item>
+        <item>Muhammad Wildan</item>
+    </string-array>
+
+    <string-array name="data_location_qs">
+        <item>Mataram</item>
+        <item>Lombok Tengah</item>
+        <item>Sekotong</item>
+    </string-array>
+
+    <string-array name="data_desc_qs">
+        <item>Lorem ipsum dolor sit amet consectetur. Nec natoque amet aenean faucibus consequat. Malesuada urna enim dictum varius feugiat nullam scelerisque cras non. Viverra tortor viverra mollis malesuada volutpat at a risus. Amet duis venenatis dignissim commodo laoreet.</item>
+        <item>Lorem ipsum dolor sit amet consectetur. Nec natoque amet aenean faucibus consequat. Malesuada urna enim dictum varius feugiat nullam scelerisque cras non. Viverra tortor viverra mollis malesuada volutpat at a risus. Amet duis venenatis dignissim commodo laoreet.</item>
+        <item>Lorem ipsum dolor sit amet consectetur. Nec natoque amet aenean faucibus consequat. Malesuada urna enim dictum varius feugiat nullam scelerisque cras non. Viverra tortor viverra mollis malesuada volutpat at a risus. Amet duis venenatis dignissim commodo laoreet.</item>
     </string-array>
 </resources>

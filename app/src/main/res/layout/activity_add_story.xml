@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    tools:context=".ui.addstory.AddStoryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/destination_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_cross" />
+
+        <TextView
+            android:id="@+id/tv_login_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambahkan ceritamu"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginStart="74dp"
+            android:textSize="16sp"
+            android:layout_marginTop="0dp"
+            android:textStyle="normal"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@id/add_img"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_height="155dp"
+        android:background="@drawable/rounded_border_add_photo"
+        android:gravity="center">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/iv_add_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/baseline_add_image" />
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/nama_lokasi"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/judul_kegiatan"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:background="@drawable/input_text_background"/>
+
+    <EditText
+        android:id="@+id/et_des"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/deskripsi"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:padding="10dp"
+        android:fontFamily="@font/poppins"
+        android:background="@drawable/input_text_background"
+        />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/post"
+        android:fontFamily="@font/poppins"
+        android:textAllCaps="false"
+        />
+</LinearLayout>

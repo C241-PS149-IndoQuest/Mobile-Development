@@ -8,4 +8,6 @@
     <item name="tv_item_desc" type="id" />
     <item name="tv_item_location" type="id" />
     <item name="til_search_destination" type="id" />
+    <item name="add_img" type="id" />
+    <item name="add_location_map" type="id" />
 </resources>

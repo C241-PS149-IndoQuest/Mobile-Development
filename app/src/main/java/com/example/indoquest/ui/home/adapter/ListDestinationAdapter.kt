@@ -10,7 +10,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.indoquest.R
 import com.example.indoquest.model.Destination
 import com.example.indoquest.ui.detaildestination.DetailDestinationActivity
-import com.example.indoquest.ui.detaildestination.fragment.DetailFragment
 
 
 class ListDestinationAdapter(private val listDestination: ArrayList<Destination>) : RecyclerView.Adapter<ListDestinationAdapter.ListViewHolder>() {
@@ -47,10 +46,6 @@ class ListDestinationAdapter(private val listDestination: ArrayList<Destination>
                 val intent = Intent(itemView.context, DetailDestinationActivity::class.java)
                 intent.putExtra("Destination", destination)
                 itemView.context.startActivity(intent)
-
-//                val intent2 = Intent(itemView.context, DetailFragment::class.java)
-//                intent2.putExtra("Destination", destination)
-//                itemView.context.startActivity(intent2)
             }
         }
     }

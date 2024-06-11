@@ -22,12 +22,10 @@ class CustomEditText : AppCompatEditText {
     var isEmailValid = false
     var isPasswordValid = false
     var isConfirmPasswordValid = false
-
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
         textAlignment = View.TEXT_ALIGNMENT_VIEW_START
     }
-
     fun validateInput(inputType : Char){
         addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
@@ -43,7 +41,6 @@ class CustomEditText : AppCompatEditText {
             }
         })
     }
-
     fun validateEmail(email : String){
         if(email.isEmpty()){
             isEmailValid = false
@@ -57,7 +54,6 @@ class CustomEditText : AppCompatEditText {
             }
         }
     }
-
 
     fun validatePassword(password : String){
         if(password.isEmpty()){
