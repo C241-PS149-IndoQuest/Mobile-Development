@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical" >
 
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="40dp"
@@ -21,22 +21,22 @@
                 android:id="@+id/iv_back"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_gravity="center_vertical"
+                android:layout_gravity="start|center_vertical"
                 android:contentDescription="@string/destination_image"
                 android:scaleType="centerCrop"
-                android:src="@drawable/ic_cross" />
+                android:src="@drawable/ic_close" />
             <TextView
                 android:id="@+id/tv_login_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tambahkan hidden gem"
+                android:text="@string/add_hidden_gem"
+                android:layout_gravity="center|center_vertical"
                 android:textColor="@color/black"
                 android:fontFamily="@font/poppins_semibold"
-                android:layout_marginStart="58dp"
                 android:textSize="16sp"
                 android:layout_marginTop="0dp"
                 android:textStyle="normal"/>
-        </LinearLayout>
+        </FrameLayout>
 
         <FrameLayout
             android:id="@id/add_img"
@@ -53,73 +53,141 @@
                 app:srcCompat="@drawable/baseline_add_image" />
         </FrameLayout>
 
+        <TextView
+            android:id="@+id/tv_add_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="@string/add_image" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="Name" />
+
         <EditText
             android:id="@+id/nama_lokasi"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="0dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/nama_tempat"
+            android:hint="@string/destination_name"
             android:fontFamily="@font/poppins"
-            android:inputType="textPersonName"
-            android:padding="10dp"
-            android:background="@drawable/input_text_background"/>
+            android:inputType="textPersonName"/>
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="@string/location" />
 
         <EditText
             android:id="@+id/et_lokasi"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="0dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/lokasi_tempat"
+            android:hint="@string/destination_location"
             android:inputType="textPersonName"
-            android:padding="10dp"
             android:fontFamily="@font/poppins"
-            android:maxLines="1"
-            android:background="@drawable/input_text_background"/>
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="@string/category" />
 
         <EditText
             android:id="@+id/et_catogery"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:hint="@string/kategori"
+            android:layout_marginTop="0dp"
+            android:hint="@string/detination_category"
             android:inputType="textPersonName"
-            android:padding="10dp"
             android:fontFamily="@font/poppins"
-            android:maxLines="1"
-            android:background="@drawable/input_text_background"/>
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="@string/description" />
 
         <EditText
-            android:id="@+id/et_des"
+            android:id="@+id/et_description"
             android:layout_width="match_parent"
             android:layout_height="120dp"
-            android:layout_marginTop="8dp"
-            android:hint="@string/deskripsi"
+            android:layout_marginTop="0dp"
+            android:hint="@string/destination_description"
             android:gravity="start|top"
             android:inputType="textMultiLine"
             android:lines="8"
-            android:padding="10dp"
             android:fontFamily="@font/poppins"
-            android:background="@drawable/input_text_background"
             />
+
+        <TextView
+            android:id="@+id/tv_Tips_and_trick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="@string/tips_and_trick" />
 
         <EditText
             android:id="@+id/et_tips_trick"
             android:layout_width="match_parent"
             android:layout_height="120dp"
-            android:layout_marginTop="8dp"
-            android:hint="@string/tips_and_trick"
+            android:layout_marginTop="0dp"
+            android:hint="@string/destination_tips_and_trick"
             android:gravity="start|top"
             android:inputType="textMultiLine"
             android:lines="8"
-            android:padding="10dp"
             android:fontFamily="@font/poppins"
-            android:background="@drawable/input_text_background"
             />
+
+        <TextView
+            android:id="@+id/tv_maps_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="Add Maps Location" />
 
         <FrameLayout
             android:id="@id/add_location_map"
             android:layout_width="match_parent"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="0dp"
             android:layout_height="155dp"
             android:background="@drawable/rounded_border_add_photo"
             android:gravity="center">
@@ -133,13 +201,14 @@
 
         <Button
             android:id="@+id/btn_submit"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginBottom="50dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/send"
             android:fontFamily="@font/poppins"
             android:textAllCaps="false"
+            android:backgroundTint="@color/grey800"
             />
     </LinearLayout>
 </ScrollView>

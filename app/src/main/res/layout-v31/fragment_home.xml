@@ -60,12 +60,12 @@
                 android:id="@+id/tv_explore_your_destination"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_semibold"
-                android:layout_marginStart="20dp"
-                android:textSize="12sp"
                 android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/explore_your_destination"
                 android:textColor="@color/black"
-                android:text="@string/explore_your_destination" />
+                android:textSize="12sp" />
 
             <ImageView
                 android:id="@+id/iv_locationmark_img"

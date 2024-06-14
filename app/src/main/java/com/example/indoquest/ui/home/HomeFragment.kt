@@ -1,6 +1,7 @@
 package com.example.indoquest.ui.home
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -12,6 +13,7 @@ import com.example.indoquest.R
 import com.example.indoquest.databinding.FragmentHomeBinding
 import com.example.indoquest.model.Destination
 import com.example.indoquest.ui.home.adapter.ListDestinationAdapter
+import com.example.indoquest.ui.maps.MapsActivity
 
 class HomeFragment : Fragment() {
     private lateinit var rvDestination: RecyclerView
@@ -35,6 +37,15 @@ class HomeFragment : Fragment() {
 
         rvDestination = binding.rvRecommendDestination
         rvDestination.setHasFixedSize(true)
+
+
+        val llExploreDestination = binding.llExploreDestination
+
+        llExploreDestination?.setOnClickListener {
+            val intent = Intent(context, MapsActivity::class.java)
+            startActivity(intent)
+//            Toast.makeText(context, "Explore Destination", Toast.LENGTH_SHORT).show()
+        }
 
         list.addAll(getListDestination())
         showRecyclerList()

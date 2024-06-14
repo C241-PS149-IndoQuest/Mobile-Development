@@ -55,12 +55,13 @@
             tools:alpha="1"
             />
 
-        <com.example.indoquest.ui.customview.CustomEditText
+        <com.example.indoquest.customview.CustomEditText
             android:id="@+id/ed_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:hint="@string/username"
+            android:fontFamily="@font/poppins"
             android:layout_marginBottom="8dp"
             android:padding="16dp"
             android:alpha="0"
@@ -68,11 +69,12 @@
             android:maxLines="1"
             />
 
-        <com.example.indoquest.ui.customview.CustomEditText
+        <com.example.indoquest.customview.CustomEditText
             android:id="@+id/ed_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/email"
+            android:fontFamily="@font/poppins"
             android:layout_marginBottom="8dp"
             android:inputType="textEmailAddress"
             android:padding="16dp"
@@ -81,29 +83,33 @@
             android:maxLines="1"
             />
 
-        <com.example.indoquest.ui.customview.CustomEditText
+        <com.example.indoquest.customview.CustomEditText
             android:id="@+id/ed_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/password"
             android:inputType="textPassword"
+            android:fontFamily="@font/poppins"
             android:layout_marginBottom="8dp"
             android:padding="16dp"
             android:alpha="0"
             tools:alpha="1"
+            app:endIconMode="password_toggle"
             android:maxLines="1"
             />
 
-        <com.example.indoquest.ui.customview.CustomEditText
+        <com.example.indoquest.customview.CustomEditText
             android:id="@+id/ed_confirm_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/confirm_password"
             android:inputType="textPassword"
             android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppins"
             android:padding="16dp"
             android:alpha="0"
             tools:alpha="1"
+            app:endIconMode="password_toggle"
             android:maxLines="1"
             />
 
@@ -149,4 +155,16 @@
                 tools:alpha="1" />
         </LinearLayout>
     </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        android:translationZ="90dp"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

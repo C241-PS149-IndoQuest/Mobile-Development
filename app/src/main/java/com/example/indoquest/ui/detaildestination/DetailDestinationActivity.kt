@@ -15,21 +15,24 @@ import com.example.indoquest.R
 import com.example.indoquest.ui.detaildestination.adapter.DetailDestinationAdapter
 import com.example.indoquest.databinding.ActivityDetailDestinationBinding
 import com.example.indoquest.model.Destination
+import com.example.indoquest.ui.addcomment.AddCommentActivity
 import com.example.indoquest.ui.detaildestination.fragment.DetailFragment
 import com.example.indoquest.ui.home.HomeFragment
+import com.example.indoquest.ui.maps.MapsActivity
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
 class DetailDestinationActivity : AppCompatActivity() {
-
     private lateinit var binding : ActivityDetailDestinationBinding
-
     companion object {
         private val TAB_TITLES = intArrayOf(
             R.string.des_tab_title_1,
             R.string.des_tab_title_2
         )
         val EXTRA_DESTINATION = "Destination"
+        val INTENT_IMG_URL = "img_url"
+        val INTENT_NAME = "name"
+        val INTENT_LOCATION = "location"
     }
 
     @SuppressLint("MissingInflatedId", "CommitTransaction")
@@ -51,6 +54,26 @@ class DetailDestinationActivity : AppCompatActivity() {
         backBtn.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+            finish()
+        }
+
+        val btnCheckLocation = binding.btnCheckLocation
+        btnCheckLocation.setOnClickListener {
+            val intent = Intent(this, MapsActivity::class.java)
+//            intent.putExtra(MapsActivity.EXTRA_LATITUDE, destination.latitude)
+//            intent.putExtra(MapsActivity.EXTRA_LONGITUDE, destination.longitude)
+            startActivity(intent)
+            finish()
+        }
+
+        val fabAddComment = binding.btnAddComment
+        fabAddComment.setOnClickListener {
+            val intent = Intent(this, AddCommentActivity::class.java)
+            intent.putExtra(INTENT_IMG_URL, destination.image)
+            intent.putExtra(INTENT_NAME, destination.name)
+            intent.putExtra(INTENT_LOCATION, destination.location)
+            startActivity(intent)
+            finish()
         }
 
         val sectionsPagerAdapter = DetailDestinationAdapter(this)

@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:paddingHorizontal="8dp">
+    >
 
     <Button
         android:id="@+id/btn_category"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button"/>
+        android:background="@drawable/item_button_not_selected"
+        android:fontFamily="@font/poppins"
+        android:paddingVertical="4dp"
+        android:minHeight="0dp"
+        android:text="@string/button"
+        android:layout_gravity="center_vertical"
+        android:textSize="10sp"
+        android:textAllCaps="false"
+        android:layout_marginHorizontal="4dp"
+        tools:ignore="SmallSp" />
+
 </LinearLayout>

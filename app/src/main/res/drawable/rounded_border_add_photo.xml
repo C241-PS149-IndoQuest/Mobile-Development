@@ -5,6 +5,6 @@
     <solid android:color="@android:color/transparent" /> <!-- Optional: Set a solid color -->
     <stroke
         android:width="2dp"
-        android:color="@color/blue600"
+        android:color="@color/grey600"
         />
 </shape>

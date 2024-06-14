@@ -1,4 +1,4 @@
-package com.example.indoquest.ui.customview
+package com.example.indoquest.customview
 
 import android.content.Context
 import android.graphics.Canvas
@@ -36,7 +36,6 @@ class CustomEditText : AppCompatEditText {
                     '0' -> validateUsername(inputText)
                     '1' -> validateEmail(inputText)
                     '2' -> validatePassword(inputText)
-                    '3' -> validateConfirmPassword(inputText)
                 }
             }
         })
@@ -75,12 +74,5 @@ class CustomEditText : AppCompatEditText {
             error = "Username cannot be empty"
         }else
             isUsernameValid = true
-    }
-
-    fun validateConfirmPassword(confirmPassword : String){
-        if(confirmPassword.isEmpty()){
-            isConfirmPasswordValid = false
-            error = "Confirm password cannot be empty"
-        }
     }
 }

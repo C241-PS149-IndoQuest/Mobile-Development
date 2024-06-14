@@ -1,0 +1,145 @@
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="20dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="57dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="start|center_vertical"
+                android:contentDescription="@string/destination_image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_close" />
+
+            <TextView
+                android:id="@+id/tv_login_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/edit_profile"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="70dp"
+                android:layout_height="36dp"
+                android:fontFamily="@font/poppins"
+                android:layout_gravity="end|center_vertical"
+                android:textSize="8sp"
+                android:textAllCaps="false"
+                android:text="@string/logout"
+                tools:ignore="SmallSp" />
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/iv_edit_img_profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:foregroundGravity="center_horizontal"
+            app:srcCompat="@drawable/baseline_add_image" />
+
+        <TextView
+            android:id="@+id/tv_edit_img_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:layout_marginStart="4dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:text="Edit Image Profile" />
+
+
+        <TextView
+            android:id="@+id/tv_display_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="@string/display_name" />
+
+        <EditText
+            android:id="@+id/ed_display_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/change_your_display_name_here"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins"
+            android:inputType="textPersonName"/>
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="4dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="@string/address" />
+
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/change_your_address_here"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins"/>
+
+        <TextView
+            android:id="@+id/tv_bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="4dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Bio" />
+
+        <EditText
+            android:id="@+id/et_bio"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="@string/change_your_address_here"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_marginTop="190dp"
+            android:layout_marginBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:fontFamily="@font/poppins"
+            android:textAllCaps="false"
+            />
+    </LinearLayout>
+</ScrollView>

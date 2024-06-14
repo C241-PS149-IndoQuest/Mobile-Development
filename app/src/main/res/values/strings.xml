@@ -70,6 +70,30 @@
     <string name="location">Location</string>
     <string name="judul_kegiatan">Judul Kegiatan</string>
     <string name="post">Post</string>
+    <string name="masukkan_angka_dari_1_5">Masukkan angka dari 1-5</string>
+    <string name="tambahkan_ulasan_anda">Tambahkan Ulasan Anda</string>
+    <string name="back_to_detail_destination">back to detail destination</string>
+    <string name="explore_your_destination">Explore your destination</string>
+    <string name="logout">Logout</string>
+    <string name="change_your_username_here">Change your username here</string>
+    <string name="display_name">Display Name</string>
+    <string name="save">Save</string>
+    <string name="change_your_display_name_here">Change your display name here</string>
+    <string name="address">Address</string>
+    <string name="change_your_address_here">Change your address here</string>
+    <string name="rating">Rating</string>
+    <string name="add_hidden_gem">Add hidden gem</string>
+    <string name="category">Category</string>
+    <string name="input_the_location_here">Input the location here</string>
+    <string name="description">Description</string>
+    <string name="destination_name">Destination name</string>
+    <string name="destination_location">Destination Location</string>
+    <string name="detination_category">Detination Category</string>
+    <string name="destination_description">Destination Description</string>
+    <string name="add_image">Add Image</string>
+    <string name="destination_tips_and_trick">Destination Tips and trick</string>
+    <string name="title">Title</string>
+    <string name="add_your_story">Add Your Story</string>
 
     <!--    Destination name-->
     <string-array name="data_name">
@@ -173,4 +197,9 @@
         <item>Lorem ipsum dolor sit amet consectetur. Nec natoque amet aenean faucibus consequat. Malesuada urna enim dictum varius feugiat nullam scelerisque cras non. Viverra tortor viverra mollis malesuada volutpat at a risus. Amet duis venenatis dignissim commodo laoreet.</item>
         <item>Lorem ipsum dolor sit amet consectetur. Nec natoque amet aenean faucibus consequat. Malesuada urna enim dictum varius feugiat nullam scelerisque cras non. Viverra tortor viverra mollis malesuada volutpat at a risus. Amet duis venenatis dignissim commodo laoreet.</item>
     </string-array>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="normal">Normal</string>
+    <string name="satelite">Satelite</string>
+    <string name="terrain">Terrain</string>
+    <string name="hybrid">Hybrid</string>
 </resources>
